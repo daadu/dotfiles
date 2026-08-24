@@ -1,0 +1,50 @@
+[credential]
+	helper =
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://github.com"]
+	username = daadu
+[user]
+	name = Harsh Bhikadia
+	email = harsh@bhikadia.com
+
+[alias]
+	st = status -s
+	lol = log --oneline --graph --all
+
+# from: https://blog.gitbutler.com/how-git-core-devs-configure-git
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+    defaultBranch = master
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+# --
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[core]
+	excludesfiles = ~/.gitignore
+# --
+[merge]
+	conflictstyle = zdiff3
