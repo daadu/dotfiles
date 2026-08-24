@@ -1,0 +1,189 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "format_on_save": "on",
+  "disable_ai": false,
+  "edit_predictions": {
+    "mode": "eager",
+  },
+  "show_edit_predictions": true,
+  "diff_view_style": "unified",
+  "context_servers": {
+    "deepwiki": {
+      "enabled": true,
+      "url": "https://mcp.deepwiki.com/mcp",
+    },
+  },
+  "cli_default_open_behavior": "new_window",
+  "agent_servers": {
+    "devin": {
+      "type": "registry",
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "reasoning_effort": "low",
+        "fast-mode": false,
+        "mode": "agent",
+        "model": "gpt-5.6-sol",
+      },
+      "type": "registry",
+    },
+  },
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "vim_mode": true,
+  "project_panel": {
+    "dock": "right",
+    "default_width": 300,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    // "starts_open": false,
+    "sticky_scroll": false,
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+    "default_width": 300,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "diagnostics": {
+    // "inline": {
+    //   "enabled": true
+    // }
+  },
+  "agent": {
+    "auto_compact": {
+      "threshold": "90%",
+    },
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "create_thread": true,
+          "diagnostics": true,
+          "fetch": true,
+          "list_agents_and_models": true,
+          "list_directory": true,
+          "find_path": true,
+          "find_references": true,
+          "get_code_actions": true,
+          "go_to_definition": true,
+          "read_file": true,
+          "grep": true,
+          "skill": true,
+          "spawn_agent": true,
+          "search_web": true,
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {
+          "deepwiki": {
+            "tools": {
+              "read_wiki_structure": true,
+              "read_wiki_contents": true,
+              "ask_question": true,
+            },
+          },
+        },
+      },
+    },
+    "default_profile": "write",
+    "default_model": {
+      "provider": "lmstudio",
+      "model": "google/gemma-4-12b-qat",
+      "enable_thinking": false,
+    },
+    "dock": "left",
+    "default_width": 300,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Warm Charmed Icons",
+  },
+  "ui_font_family": "Monaspace Neon NF",
+  "ui_font_size": 14,
+  "buffer_font_family": "Monaspace Argon NF",
+  "buffer_font_size": 13,
+  "theme": {
+    "mode": "dark",
+    "light": "One Dark",
+    "dark": "Aura Dark (Soft Text)",
+  },
+  "theme_overrides": {
+    "Aura Dark (Soft Text)": {
+      "border.variant": "#15141C",
+      // "border": "#15141C",
+      // "title_bar.background": "#15141C",
+      // "panel.background": "#15141C",
+      // "panel.focused_border": "#4E466E",
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+  },
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_user_menu": false,
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+  },
+  "toolbar": {
+    "quick_actions": false,
+  },
+  "file_finder": {
+    "modal_max_width": "medium",
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+  },
+  "indent_guides": {
+    "enabled": false,
+  },
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
+  "seed_search_query_from_cursor": "never",
+  "current_line_highlight": "none",
+  "extend_comment_on_newline": false,
+  "when_closing_with_no_tabs": "keep_window_open",
+  "close_on_file_delete": true,
+  "restore_on_file_reopen": false,
+  "dap": {
+    "Delve": {
+      "binary": "/Users/harsh/.asdf/shims/dlv",
+    },
+  },
+}

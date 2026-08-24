@@ -1,0 +1,78 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "cmd-\\": "workspace::ActivatePreviousPane",
+      "ctrl-escape": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-escape": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "U": "editor::Redo",
+      "g n": "editor::SelectAllMatches",
+      "space f": "editor::Format",
+      "space i": "editor::OrganizeImports",
+      "space j": "editor::GoToDiagnostic",
+      "space J": "editor::GoToPreviousDiagnostic",
+      "space ;": "workspace::ToggleRightDock",
+      "space c l": "workspace::ToggleCenteredLayout",
+      "space e": "project_panel::ToggleFocus",
+      "space \\": "project_panel::CollapseAllEntries",
+      "space o": "outline::Toggle",
+      "space q a": "pane::CloseAllItems",
+      "space b": "pane::GoBack",
+      "space B": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-[": "editor::Fold",
+      "cmd-]": "editor::UnfoldLines",
+      "cmd-alt-[": "editor::FoldAll",
+      "cmd-alt-]": "editor::UnfoldAll",
+    },
+  },
+  {
+    "bindings": {
+      "alt-t": "workspace::NewCenterTerminal",
+    },
+  },
+  {
+    "bindings": {
+      "alt-g": "git_panel::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "alt-space": "agent::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "alt-a": "multi_workspace::ToggleWorkspaceSidebar",
+    },
+  },
+]
