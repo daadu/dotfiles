@@ -105,9 +105,10 @@
     },
     "default_profile": "write",
     "default_model": {
-      "provider": "lmstudio",
-      "model": "google/gemma-4-12b-qat",
-      "enable_thinking": false,
+      "effort": "medium",
+      "provider": "openai-subscribed",
+      "model": "gpt-5.4-mini",
+      "enable_thinking": true,
     },
     "dock": "left",
     "default_width": 300,

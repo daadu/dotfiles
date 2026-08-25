@@ -75,4 +75,9 @@
       "alt-a": "multi_workspace::ToggleWorkspaceSidebar",
     },
   },
+  {
+    "bindings": {
+      "alt-k": "project_panel::Toggle"
+    }
+  }
 ]
