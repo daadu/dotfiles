@@ -27,6 +27,7 @@ link_dotfiles() {
 # git
 echo "--- git ---"
 link_dotfiles "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
+link_dotfiles "$DOTFILES_DIR/git/gitignore" "$HOME/.gitignore"
 printf '\n'
 
 # zed
