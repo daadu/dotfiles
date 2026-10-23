@@ -8,6 +8,8 @@
 [user]
 	name = Harsh Bhikadia
 	email = harsh@bhikadia.com
+[includeIf "gitdir:~/Work/customlens-ai/"]
+    path = ~/.config/git/work.config
 
 [alias]
 	st = status -s
