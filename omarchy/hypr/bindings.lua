@@ -29,8 +29,8 @@
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
 
 -- Youtube
-hl.unbind("SUPER + SHIFT + Y")
-o.bind("SUPER + SHIFT + Y", "YouTube", "brave-origin --incognito --app=https://youtube.com")
+-- hl.unbind("SUPER + SHIFT + Y")
+-- o.bind("SUPER + SHIFT + Y", "YouTube", "brave-origin --incognito --app=https://youtube.com")
 
 -- Music
 hl.unbind("SUPER + SHIFT + M")
@@ -40,4 +40,4 @@ hl.unbind("F9")
 o.bind("CTRL + ALT + SPACE", "Start dictation (push-to-talk)", "voxtype record start")
 o.bind("CTRL + ALT + SPACE", "Stop dictation (push-to-talk)", "voxtype record stop", { release = true })
 
--- 
+--
